@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>Admin DashBoard</h2>
+<h3>Only Admin can access this</h3>
+
+<a th:href="@{/home}">Home</a>
+
+<hr/>
+<form th:action="@{/logout}" method="post">
+<button>Logout</button>
+</form>
+</body>
+</html>
